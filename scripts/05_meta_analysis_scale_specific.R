@@ -71,16 +71,16 @@ model_LS_UPDRSIII <- run_scale_meta(
 # Good ON time (hours)
 model_LS_GOODON <- run_scale_meta(
   df       = LS_scales,
-  mean_col = "GOOD_ON_mean",
-  se_col   = "GOOD_ON_se",
+  mean_col = "GOOD_ON_TIME_mean",
+  se_col   = "GOOD_ON_TIME_se",
   label    = "Good ON time (hours, LS mean change)"
 )
 
 # UDysRS
 model_LS_UDYSRS <- run_scale_meta(
   df       = LS_scales,
-  mean_col = "UDYSRS_mean",
-  se_col   = "UDYSRS_se",
+  mean_col = "UDysRS_mean",
+  se_col   = "UDysRS_se",
   label    = "UDysRS (LS mean change)"
 )
 
