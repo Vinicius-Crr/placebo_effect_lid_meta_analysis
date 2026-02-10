@@ -1,7 +1,14 @@
 ###############################################################################
 # Leave-one-out analysis – LS main model
 # Outcome: standardized mean difference (SMD)
-###############################################################################
+
+# Assumed objects:
+# - model_LS (rma object)
+# - loo_LS (leave-one-out results)
+# - LS_main (data.frame)
+
+# Leave-one-out estimates
+estimativas <- loo_LS$estimate
 
 # Number of studies
 k <- length(estimativas)
