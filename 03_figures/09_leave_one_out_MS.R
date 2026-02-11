@@ -13,7 +13,6 @@ estimativas <- loo_MS$estimate
 # Number of studies
 k <- length(estimativas)
 
-# ---------------------------------------------------------------------------
 # Leave-one-out plot
 
 plot(
@@ -40,7 +39,6 @@ abline(
 # X-axis labels
 axis(1, at = 1:k, labels = 1:k)
 
-# ---------------------------------------------------------------------------
 # Highlight extreme values
 
 min_id <- which.min(estimativas)
@@ -49,7 +47,6 @@ max_id <- which.max(estimativas)
 points(min_id, estimativas[min_id], col = "grey", pch = 19, cex = 1.5)
 points(max_id, estimativas[max_id], col = "grey", pch = 19, cex = 1.5)
 
-# ---------------------------------------------------------------------------
 # Labels for extreme studies
 
 text(
@@ -68,7 +65,6 @@ text(
   cex = 0.9
 )
 
-# ---------------------------------------------------------------------------
 # Legend
 
 legend(
