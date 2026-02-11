@@ -12,7 +12,6 @@
 weights_model <- weights(model_MS)
 weights_percent <- round(weights_model / sum(weights_model) * 100, 2)
 
-# ---------------------------------------------------------------------------
 # Forest plot
 
 # Expanded x-axis limits to create space for the weight column
@@ -30,7 +29,6 @@ forest(
   header = TRUE
 )
 
-# ---------------------------------------------------------------------------
 # Add study weights (%)
 
 k <- length(MS_main$REF_ID)
@@ -52,7 +50,6 @@ text(
   adj = 1
 )
 
-# ---------------------------------------------------------------------------
 # Heterogeneity statistics
 
 text(
