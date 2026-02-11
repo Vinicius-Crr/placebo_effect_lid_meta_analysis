@@ -6,7 +6,6 @@
 # Assumed object:
 # - model_LS_UPDRSIII (rma object)
 
-# ---------------------------------------------------------------------------
 # Study weights (%)
 
 weights_model   <- weights(model_LS_UPDRSIII)
@@ -14,12 +13,10 @@ weights_percent <- round(weights_model / sum(weights_model) * 100, 2)
 
 k <- model_LS_UPDRSIII$k
 
-# ---------------------------------------------------------------------------
 # Expanded x-axis limits to create space for weight column
 windows(15, 10)
 xlim_expanded <- c(-25, 25)
 
-# ---------------------------------------------------------------------------
 # Forest plot
 
 forest(
@@ -34,7 +31,6 @@ forest(
   header = TRUE
 )
 
-# ---------------------------------------------------------------------------
 # Add study weights (%)
 
 text(
@@ -69,7 +65,6 @@ text(
   xpd = NA
 )
 
-# ---------------------------------------------------------------------------
 # Heterogeneity statistics
 
 text(
