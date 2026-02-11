@@ -3,6 +3,9 @@
 # Outcome: Good ON time (LS-mean Difference)
 ###############################################################################
 
+# Assumed object:
+# - model_LS_GOODON (rma object)
+
 weights_model   <- weights(model_LS_GOODON)
 weights_percent <- round(weights_model / sum(weights_model) * 100, 2)
 k <- model_LS_GOODON$k
